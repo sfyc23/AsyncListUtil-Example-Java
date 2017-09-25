@@ -1,7 +1,6 @@
 package com.github.sfyc23.asynclistutil_example_java.synclistutil;
 
 import android.support.v7.util.AsyncListUtil;
-import android.util.Log;
 
 import com.github.sfyc23.asynclistutil_example_java.db.ItemSource;
 import com.github.sfyc23.asynclistutil_example_java.model.Item;
@@ -27,7 +26,7 @@ public class DataCallback extends AsyncListUtil.DataCallback<Item> {
             return;
         }
         for (int i = 0; i < itemCount; i++) {
-            Log.e("itemCount:",itemCount+"");
+//            Log.e("itemCount:",itemCount+"");
             data[i] = itemSource.getItem(startPosition + i);
         }
     }
